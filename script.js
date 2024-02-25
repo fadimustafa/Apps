@@ -41,18 +41,18 @@ async function quiz(){
     let currentQuestionIndex = 0;
     let score = 0;
 
-     startPag();
+     //startPag();
 
     let data = await respon.json();
         console.log(data);
         
-    function startPag(){
-        nextBut.style.display = "block";
-        nextBut.innerHTML = "Start play!";
-        questionElemant.innerHTML = "Wellcom To The Trivia Game..";
-        awnserButtins.style.display = "none";
-        nextBut.addEventListener("click" , startQuiz);
-    }
+   // function startPag(){
+        //nextBut.style.display = "block";
+        //nextBut.innerHTML = "Start play!";
+       // questionElemant.innerHTML = "Wellcom To The Trivia Game..";
+       // awnserButtins.style.display = "none";
+      //  nextBut.addEventListener("click" , startQuiz);
+   // }
 
     console.log(data.results[currentQuestionIndex].question)
     console.log(data.results[currentQuestionIndex].correct_answer)
@@ -61,7 +61,7 @@ async function quiz(){
         currentQuestionIndex =0;
         score = 0;
         nextBut.innerHTML = "Next";
-        awnserButtins.style.display = "block";
+        //awnserButtins.style.display = "block";
         showQuestion();
     }
     
