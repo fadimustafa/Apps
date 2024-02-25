@@ -75,3 +75,10 @@ cursor:default;
     background: rgb(231, 41, 41);
     color: #fff;
 }
+#score-st{
+    font-size: 18;
+    font-weight: 600;
+    padding: 5px 0px;
+    color:#2f1c72;
+    display: none;
+}
