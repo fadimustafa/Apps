@@ -41,8 +41,6 @@ async function quiz(){
     let currentQuestionIndex = 0;
     let score = 0;
 
-     //startPag();
-
     let data = await respon.json();
         console.log(data);
         
@@ -56,7 +54,7 @@ async function quiz(){
 
     console.log(data.results[currentQuestionIndex].question)
     console.log(data.results[currentQuestionIndex].correct_answer)
-
+    startQuiz();
     function startQuiz(){
         currentQuestionIndex =0;
         score = 0;
