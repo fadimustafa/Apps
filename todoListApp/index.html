@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/12b35bcaa7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="notes-svgrepo-com.svg" />
+    <title>Todo List App</title>
+  </head>
+  <body>
+    <form action=""></form>
+    <div class="app">
+      <h1>Todo List.</h1>
+      <div class="input-field">
+        <textarea class="text-area" placeholder="write here "></textarea>
+        <i class="fa-regular fa-note-sticky" style="font-size: 20px"></i>
+      </div>
+
+      <ul class="do-list"></ul>
+
+      <div class="btu-tex-contenar">
+        <span>you have <span class="tasks-cunt">no</span> tasks to do.</span>
+        <button onclick="clearAll()" class="clear-btu">Clear All</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
